@@ -1,0 +1,23 @@
+{
+  "name": "eventz",
+  "version": "1.0.0",
+  "description": "Proiect Tehnici web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proiect",
+    "web"
+  ],
+  "author": "Lucian Trepteanu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.1",
+    "uuidv4": "^6.0.0"
+  }
+}

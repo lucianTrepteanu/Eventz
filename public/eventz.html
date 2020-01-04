@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Event List </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="main-nav">
+            <ul>
+                <li> <a href="register.html"> Register </a></li>
+                <li> <a href="login.html"> Login </a></li>
+                <li> <a href="eventz.html"> Eventz </a></li>
+                <li> <a href="index.html"> Home </a></li>
+            </ul>
+        </nav>
+        <div class="about-title">
+            <h1> Event list </h1>
+        </div>
+
+        <div class="form">
+            <input type="text" class="form-elem" name="evName" id="evName" placeholder="Event name">
+            <input type="text" class="form-elem" name="evDate" id="evDate" placeholder="Event date">
+            <input type="text" class="form-elem" name="evHour" id="evHour" placeholder="Event hour">
+            <button type="button" class="btn" id="addButton"> Add Event </button>
+            <button type="button" class="btn" id="updButton" disabled> Update </button>
+        </div>
+
+        <div id="event-list" class="event-list">
+
+        </div>
+    
+    </div>
+
+    <script src="eventz.js"></script>
+</body>
+</html>
