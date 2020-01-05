@@ -82,6 +82,14 @@ function showEventz(eventz){
 }
 
 function createEvent(){
+    if(currentUser==""){
+        window.alert("Log in first in order to create an event");
+        return;
+    } else if(evName.value=="" || !evName.value || evDate.value=="" || !evDate.value || evHour.value=="" || !evHour.value){
+        window.alert("All fields are required!");
+        return;
+    }
+
     const newObj={
         name:evName.value,
         fromUser:currentUser,
@@ -112,6 +120,11 @@ function deleteEvent(id){
 }
 
 function updateEvent(id){
+    if(evName.value=="" || !evName.value || evDate.value=="" || !evDate.value || evHour.value=="" || !evHour.value){
+        window.alert("All fields are required!");
+        return;
+    }
+
     const newObj={
         name:evName.value,
         date:evDate.value,
@@ -136,12 +149,6 @@ function updateEvent(id){
     });
 }
 
-if(currentUser==""){
-    addButton.onclick=function(){
-        window.alert("Log in first in order to create an event");
-    }
-} else {
-    addButton.onclick=createEvent;
-}
+addButton.onclick=createEvent;
 
 getEventz();

@@ -1,3 +1,4 @@
+
 /*GENERAL*/
 body{
     background:url(body_bck.jpg);
@@ -10,7 +11,9 @@ html{
 .form {
     display: flex;
     flex-flow: row;
+    align-self: center;
     column-gap: 20px;
+    justify-content: center;
 }
 
 .wrapper{
@@ -38,6 +41,7 @@ html{
     color: brown;
     text-transform: uppercase;
     font-size: 1.1rem;
+    transition: 0.4s ease-in-out;
 }
 
 .main-nav a:hover{
@@ -60,6 +64,7 @@ html{
     color:darkgray;
     padding: 0.6rem 1.3rem;
     text-decoration: none;
+    transition: 0.4s ease-in-out;
 }
 .btn:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -82,11 +87,12 @@ html{
 
 .box{
     text-align: center;
-    background:linear-gradient(#bba169,#f0cf85);
+    background:linear-gradient(rgba(187,161,105,0.8),rgba(240,207,133,0.4));
     display:flex;
     flex-direction: column;
     row-gap: 10px;
     border-radius: 30px;
+    transition: 0.4s ease-in-out;
 }
 
 .box:hover{
@@ -95,7 +101,7 @@ html{
 }
 
 .buttons-box{
-    background: linear-gradient(#e7f0c3,#989e81);
+    background: linear-gradient(rgba(231,240,195,0.8),rgba(152,158,129,0.4));
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,9 +114,11 @@ html{
     border-radius: 20px;
     background: chocolate;
     color:darkgray;
-    padding: 0.6rem 1.3rem;
+    padding: 0.6rem;
     text-decoration: none;
+    text-align: center;
     width: 30%;
+    transition: 0.4s ease-in-out;
 }
 
 .box-btn:hover{
@@ -132,18 +140,20 @@ html{
     justify-content: center;
     display: flex;
     flex-direction: row;
-    
     column-gap: 20px;
 }
 
 .home-about{
     width: 50%;
     height: 95vh;
-    text-align: center;
+    align-content: center;
+    display: flex;
+    padding:10px;
 }
 
 .home-about p{
-    margin-top: 40%;
+    margin:auto;
+    text-align: center;
 }
 
 .home-img{
@@ -152,10 +162,67 @@ html{
     border-radius: 20px;
     background:linear-gradient(0deg,rgba(57, 173, 165, 1),rgba(57, 173, 165, 0.4)),url("https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/ce16e294-d010-4c31-ae98-535f4d999cbc/File/0736e07604304b6bf6b0dfa0f86ee2d6/shutterstock_1366655588_eps.jpg") center center;
     background-size:cover;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
 }
 
 .contact{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+}
+
+.contact-data{
+    display: grid;
+    grid-template-columns: 4fr 0.5fr 2fr;
+    align-items: center;
+}
+
+.contact-data h2{
+    font-style: italic;
+    color: rgb(41, 27, 27);
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.contact-data p{
+    transition: 0.4s ease-in-out;
+}
+
+.contact-data p:hover{
+    color: silver;
+    transition: 0.4s ease-in-out;
+}
+
+.contact-icons{
+    height: 60vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+.social {
+    color:rgba(57, 173, 165, 1);
+    font-size:40px;
+    padding:12px 17px;
+    border-radius:50%;
+    background:transparent;
+    transition:0.4s ease-in-out;
+    font-weight:bold;
+    margin:0px 8px;
+}
+
+.social:hover { 
+    cursor: pointer;
+    color:#fff;
+    background:rgba(57, 173, 165, 1);
+    box-shadow:0px 10px 30px rgba(57, 173, 165, 0.4);
 }

@@ -11,6 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
 
+app.use(express.static(__dirname+"/fontawesome/css"));
 app.use(express.static(__dirname+"/public"));
 
 app.post("/users",function(req,res){

@@ -19,5 +19,9 @@
     "fs": "0.0.1-security",
     "morgan": "^1.9.1",
     "uuidv4": "^6.0.0"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^5.6.3"
   }
 }
